@@ -1,4 +1,4 @@
-message = 'welcome1';
+var message = 'welcome1';
 
 drawName(message);
 
