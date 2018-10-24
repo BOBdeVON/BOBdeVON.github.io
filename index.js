@@ -1,2 +1,2 @@
-drawName(Welcome);
+drawName('Welcome');
 bounceBubbles();
