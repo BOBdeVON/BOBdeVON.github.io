@@ -1,4 +1,2 @@
-message = 'Welcome to bergy finder';
-
-drawName(message);
+drawName(Welcome);
 bounceBubbles();
