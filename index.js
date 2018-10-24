@@ -1,5 +1,3 @@
-var message = 'welcome1';
-
-drawName(message);
+drawName('hey');
 
 bounceBubbles();
