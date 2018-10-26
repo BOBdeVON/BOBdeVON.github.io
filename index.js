@@ -1,2 +1,0 @@
-drawName('Welcome');
-bounceBubbles();
