@@ -1,4 +1,4 @@
- function Vector(x, y, z) {
+function Vector(x, y, z) {
   this.x = x;
   this.y = y;
   this.z = z;
