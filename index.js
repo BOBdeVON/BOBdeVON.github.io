@@ -1,3 +1,3 @@
-drawName('hey');
+drawName('Welcome');
 
 bounceBubbles();
