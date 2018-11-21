@@ -26,19 +26,42 @@
     top: 2000px;
 }
       p {
-      font-size: 20px
+      font-size: 10px
       }
       
       
       
       
-    .tab {
+  
+      
+      
+      
+  </style>
+  
+  
+  
+  
+<div style="text-align: center;" id="demotext">To The Pombo Appreciation Page</div>
+  
+  
+  <div1> </div1> 
+  
+  <div2 id="hello">This Website is a Pombo appreciation page</div2>
+  
+  
+  
+  
+  <style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
 }
 
-/* Style the buttons that are used to open the tab content */
+/* Style the buttons inside the tab */
 .tab button {
     background-color: inherit;
     float: left;
@@ -47,6 +70,7 @@
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
+    font-size: 17px;
 }
 
 /* Change background color of buttons on hover */
@@ -65,77 +89,23 @@
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
-}  
-      
-      
-      
-      
-  </style>
-  
-  <script>
-    function openCity(evt, cityName) {
-    // Declare all variables
-    var i, tabcontent, tablinks;
-
-    // Get all elements with class="tabcontent" and hide them
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-
-    // Get all elements with class="tablinks" and remove the class "active"
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-
-    // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
 }
-  </script>
-  
-  
-<div style="text-align: center;" id="demotext">To The Pombo Appreciation Page</div>
-  
-  
-  <div1> </div1> 
-  
-  <div2 id="hello">This Website is a Pombo appreciation page</div2>
-  
-  
-  
-  
-  
-  
-  
-  <div></div>
-  
-  
-  
-  
-  
-  <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')">History</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Lake Daniel Nelson</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">The Legend of Bergy</button>
+</style>
+</head>
+<body>
+
+<h2>Tabs</h2>
+<p>Click on the buttons inside the tabbed menu:</p>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
 </div>
 
-<!-- Tab content -->
 <div id="London" class="tabcontent">
-  <p> size=20px>history of pombo mart: 
-  The original building ( timber construction ) was built on crown land.  The  Camperdown Cheese and Butter Factory opened as a Creamery in 1892. The Creamery was sold to Bacchus Marsh Concentrated Milk Co. Ltd. in 1908. The product produced was Lifeguard Milk. In 1917 Nestles Anglo Swiss Company purchased the building which was replaced by the current iron building. In 1936 the building was sold back to the Camperdown Cheese and Butter Company, in whose hands it remained until its closure around the mid 1950's. Since then it has been used as a Piggery, Poultry Farm and Trash & Treasure Mart. The previous owners purchased the building in July 2000. It had been empty for more than six years and was dilapidated and a bird habitat. It took them every weekend for two and a half years to clean it up and repair the first section, which opened, for business on Saturdays and Sundays in November 2002.
-  Since then the repair and renovations have continued with the Pombo Mart housing  antique dealers in an area of approximately 600 square metres. Works from local artists are also represented in the Ken Hunter Gallery.
-
-A gift shop, Sharlene Cottage(now Elms Cottage) was opened in March 2004 and has grown from one room to four. It has a large selection of quality gifts at reasonable prices.
-
-A new area including a new front entrance with disabled parking and access was opened on the weekend of 29th October 2005. This increased the total area to over 1000 square metres.
-
-A disabled toilet block opened in April 2007, followed by Café Pombo opening on 1st November 2008.
-
-Patrons are now coming from as far away as Melbourne, Hamilton, Portland and surrounding areas. Many tourists have called in from as far as Darwin and Queensland as well as overseas visitors.
-
-Ownership has now passed to Denise, who together with Harris and their staff continue the service established by Ray & Noelene.</p>
+  <h3>London</h3>
+  <p>London is the capital city of England.</p>
 </div>
 
 <div id="Paris" class="tabcontent">
@@ -147,6 +117,24 @@ Ownership has now passed to Denise, who together with Harris and their staff con
   <h3>Tokyo</h3>
   <p>Tokyo is the capital of Japan.</p>
 </div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+  
+  
   
 
 
