@@ -1,3 +1,6 @@
+<?php $json = json_encode(array('username'=>'myUsername', 'password'=>'myPassword', 'gender'=>'male', 'role'=>'user', 'profile'=>'https://monsite.com/profile/myUserername', 'image'=>'https://html5-chat.com/img/malecostume.svg'));
+$encoded = file_get_contents("https://jwt.html5-chat.com/protect/".base64_encode($json), 'startRoom'=>5);
+?>
 <!DOCTYPE html>
 <html>
   <head>
